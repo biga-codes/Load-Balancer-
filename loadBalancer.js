@@ -2,7 +2,7 @@ const axios = require('axios'); // Using axios for HTTP requests
 
 let discoveredServers = [];
 
-// Function to discover servers from an API or service registry
+// discovers servers dynamically
 const discoverServers = async () => {
   try {
     const response = await axios.get('http://localhost:8000/servers'); 
@@ -13,7 +13,7 @@ const discoverServers = async () => {
   }
 };
 
-// Function to check the health of a server
+// checks the health of a server
 const checkServerHealth = async (server) => {
   try {
     const response = await axios.get(`http://${server.host}:${server.port}/health`); // Adjust endpoint if needed
@@ -24,22 +24,22 @@ const checkServerHealth = async (server) => {
   }
 };
 
-// Function to filter healthy servers
+// filters healthy servers
 const filterHealthyServers = async (servers) => {
   const healthPromises = servers.map(server => checkServerHealth(server));
   const healthResults = await Promise.all(healthPromises);
   return servers.filter((server, index) => healthResults[index]);
 };
 
-// Function to periodically update the list of healthy servers
+
 const updateServerList = async () => {
-  await discoverServers(); // Discover servers first
-  discoveredServers = await filterHealthyServers(discoveredServers); // Filter for healthy servers
+  await discoverServers(); 
+  discoveredServers = await filterHealthyServers(discoveredServers); 
   console.log('Updated server list:', discoveredServers);
 };
 
-// Set interval to periodically update server list every 10 seconds
-setInterval(updateServerList, 10000); // Update every 10 seconds
+
+setInterval(updateServerList, 10000); 
 
 module.exports = {
   getServers: () => discoveredServers,

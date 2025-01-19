@@ -10,7 +10,7 @@ This project is designed to provide flexible load balancing for backend servers 
 - Load Balancer: Distributes requests using Round Robin or Least Connections.
 - Server Discovery & Health Check: Monitors and filters out unhealthy servers.
 - Configurable Backend Servers: Create servers dynamically with ports and optional delays.
-- Testing with `curl` or `test_load_balancer.sh` script:** Send multiple requests to test the distribution.
+- Testing with `curl` or `test_load_balancer.sh` to send multiple requests to test the distribution.
 - Multiple Methods for Request Testing:
    - Automated Testing: Using the `test_load_balancer.sh` script to send multiple requests to the load balancer.
    - Manual Testing: Using `curl` to send individual requests to the load balancer and view load distribution.

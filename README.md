@@ -7,8 +7,6 @@ This project is designed to provide flexible load balancing for backend servers 
 
 ### **Features of the Load Balancer Project**
 
-# **Summary of Features and Commands:**
-
 - **Load Balancer:** Distributes requests using Round Robin or Least Connections.
 - **Server Discovery & Health Check:** Monitors and filters out unhealthy servers.
 - **Configurable Backend Servers:** Create servers dynamically with ports and optional delays.

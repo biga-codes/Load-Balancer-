@@ -22,6 +22,7 @@ This project is designed to provide flexible load balancing for backend servers 
 # **Project Structure**
 
 ```
+
 .
 ├── createServer.js            # Create a single backend server
 ├── createServers.sh           # Create multiple backend servers
@@ -31,7 +32,9 @@ This project is designed to provide flexible load balancing for backend servers 
 ├── server.js                  # Main load balancer server
 ├── test_load_balancer.sh      # Send test requests to the load balancer
 ├── package.json               # Project dependencies
+
 ```
+
 
 ## **IMPLEMENTATION**
 ![Screenshot 2025-01-20 013840](https://github.com/user-attachments/assets/68744a55-9228-4bb4-ba4e-9a731c20a637)

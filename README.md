@@ -49,12 +49,14 @@ This project is designed to provide flexible load balancing for backend servers 
 - **Least Connections**: Routes requests to the server with the least number of active connections.
 
 ---
-File Descriptions:
-server.js:
-Purpose: Main entry point for the load balancer. It starts an HTTP server, accepts incoming requests, and uses a selected load balancing algorithm (round-robin or least connections) to route requests to healthy backend servers.
-roundRobin.js: Implements the Round-Robin algorithm. It forwards requests to servers in a circular manner. Each server gets an equal number of requests.
-leastConnections.js: Implements the Least Connections algorithm. It forwards requests to the server with the fewest active connections to balance the load better.
-serviceDiscovery.js: Discovers and manages backend servers. It checks their health (whether they're up or down), tracks their connection count, and provides the list of available healthy servers to the load balancer.
+### File Descriptions:
+
+-server.js: Main entry point for the load balancer. It starts an HTTP server, accepts incoming requests, and uses a selected load balancing algorithm (round-robin or least 
+           connections) to route requests to healthy backend servers.
+-roundRobin.js: Implements the Round-Robin algorithm. It forwards requests to servers in a circular manner. Each server gets an equal number of requests.
+-leastConnections.js: Implements the Least Connections algorithm. It forwards requests to the server with the fewest active connections to balance the load better.
+-serviceDiscovery.js: Discovers and manages backend servers. It checks their health (whether they're up or down), tracks their connection count, and provides the list of 
+                      available healthy servers to the load balancer.
 ---
 
 

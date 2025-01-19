@@ -5,6 +5,7 @@
 A load balancer is a system or device that distributes incoming network traffic across multiple servers. This ensures that no single server gets overwhelmed with too many requests, improving performance, availability, and reliability of your web applications, thus ensuring that no server becomes overloaded.
 This project is designed to provide flexible load balancing for backend servers with an easy-to-use CLI and real-time monitoring.
 
+
 ### **Features of the Load Balancer Project**
 
 - Load Balancer: Distributes requests using Round Robin or Least Connections.
@@ -15,7 +16,7 @@ This project is designed to provide flexible load balancing for backend servers 
    - Automated Testing: Using the `test_load_balancer.sh` script to send multiple requests to the load balancer.
    - Manual Testing: Using `curl` to send individual requests to the load balancer and view load distribution.
      
-### This project is designed to provide flexible load balancing for backend servers with an easy-to-use CLI and real-time monitoring.
+# This project is designed to provide flexible load balancing for backend servers with an easy-to-use CLI and real-time monitoring.
 ---
 
 # **Project Structure**

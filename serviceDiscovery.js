@@ -14,20 +14,20 @@ const discoverServers = async () => {
     console.log('Discovered servers:', discoveredServers);
 };
 
-// Check health of a server
+
 const checkServerHealth = async (server) => {
     try {
         const response = await axios.get(`http://${server.host}:${server.port}/health`);
-        return response.status === 200;  // Healthy if status is 200
+        return response.status === 200;  // Healthy 
     } catch (error) {
         console.error(`Health check failed for ${server.host}:${server.port}`);
-        return false;  // Server is unhealthy
+        return false;  // unhealthy
     }
 };
 
-// Update server list with health status
+
 const updateServerList = async () => {
-    await discoverServers();  // Discover servers
+    await discoverServers();  
     const healthPromises = discoveredServers.map(async (server) => {
         server.healthy = await checkServerHealth(server);
         return server;
@@ -36,7 +36,7 @@ const updateServerList = async () => {
     console.log('Updated server list with health status:', discoveredServers);
 };
 
-// Get healthy servers
+// get all the healthy servers
 const getServers = () => discoveredServers.filter(server => server.healthy);
 
 module.exports = {

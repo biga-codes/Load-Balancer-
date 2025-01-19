@@ -5,7 +5,7 @@
 A load balancer is a system or device that distributes incoming network traffic across multiple servers. This ensures that no single server gets overwhelmed with too many requests, improving performance, availability, and reliability of your web applications, thus ensuring that no server becomes overloaded.
 This project is designed to provide flexible load balancing for backend servers with an easy-to-use CLI and real-time monitoring.
 
-Built using: node.js
+Built using: node.js , shell script
 
 ### **Features of the Load Balancer Project**
 

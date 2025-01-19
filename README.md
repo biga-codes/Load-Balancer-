@@ -1,4 +1,4 @@
-## **LOAD BALANCER **
+## **LOAD BALANCER**
 
 ## **Project-Overview**
 
@@ -7,7 +7,7 @@ This project is designed to provide flexible load balancing for backend servers 
 
 ### **Features of the Load Balancer Project**
 
-### **Summary of Features and Commands:**
+# **Summary of Features and Commands:**
 
 - **Load Balancer:** Distributes requests using Round Robin or Least Connections.
 - **Server Discovery & Health Check:** Monitors and filters out unhealthy servers.
@@ -16,11 +16,11 @@ This project is designed to provide flexible load balancing for backend servers 
 - **Multiple Methods for Request Testing:**
    - **Automated Testing:** Using the `test_load_balancer.sh` script to send multiple requests to the load balancer.
    - **Manual Testing:** Using `curl` to send individual requests to the load balancer and view load distribution.
-   - 
-This project is designed to provide flexible load balancing for backend servers with an easy-to-use CLI and real-time monitoring.
+     
+## This project is designed to provide flexible load balancing for backend servers with an easy-to-use CLI and real-time monitoring.
 ---
 
-## **Project Structure**
+# **Project Structure**
 
 ```
 .

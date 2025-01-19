@@ -103,7 +103,7 @@ npm install http-proxy http axios
 
 You can create backend servers using two methods:
 
-## **Option 1: `createServers.sh` Script**
+  **Option 1: `createServers.sh` Script**
 This script creates multiple backend servers:
 
 ```bash
@@ -111,7 +111,7 @@ chmod +x createServers.sh   # Make executable
 ./createServers.sh 3001 3002 3003   # Create servers on ports 3001, 3002, 3003
 ```
 
-## **Option 2: `createServer.js` Script**
+  **Option 2: `createServer.js` Script**
 You can create a single server with a custom IP, port, and optional delay:
 
 ```bash

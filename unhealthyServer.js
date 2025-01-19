@@ -1,3 +1,6 @@
+// so this is an unhealthy server whose status I manually set to 500(unhealthy)
+//to check the health status of this specific server , open terminal and paste the command : curl http://127.0.0.1.9001/Health
+
 const http = require('http');
 
 // This server will simulate an unhealthy server (always returning 500)

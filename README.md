@@ -15,7 +15,7 @@ This project is designed to provide flexible load balancing for backend servers 
    - **Automated Testing:** Using the `test_load_balancer.sh` script to send multiple requests to the load balancer.
    - **Manual Testing:** Using `curl` to send individual requests to the load balancer and view load distribution.
      
-## This project is designed to provide flexible load balancing for backend servers with an easy-to-use CLI and real-time monitoring.
+### This project is designed to provide flexible load balancing for backend servers with an easy-to-use CLI and real-time monitoring.
 ---
 
 # **Project Structure**
@@ -59,7 +59,7 @@ This project is designed to provide flexible load balancing for backend servers 
 
 
 
-### **How to Test and Use the Load Balancer**
+## **How to Test and Use the Load Balancer**
 
 1. **Create Backend Servers:**
 
@@ -89,7 +89,7 @@ This project is designed to provide flexible load balancing for backend servers 
 
 ## **How to Run the Project**
 
-### **1. Install Dependencies**
+## **1. Install Dependencies**
 
 Make sure you have **Node.js** installed, then run:
 
@@ -99,11 +99,11 @@ npm install http-proxy http axios
 
 ---
 
-### **2. Create Backend Servers**
+## **2. Create Backend Servers**
 
 You can create backend servers using two methods:
 
-#### **Option 1: `createServers.sh` Script**
+## **Option 1: `createServers.sh` Script**
 This script creates multiple backend servers:
 
 ```bash
@@ -111,7 +111,7 @@ chmod +x createServers.sh   # Make executable
 ./createServers.sh 3001 3002 3003   # Create servers on ports 3001, 3002, 3003
 ```
 
-#### **Option 2: `createServer.js` Script**
+## **Option 2: `createServer.js` Script**
 You can create a single server with a custom IP, port, and optional delay:
 
 ```bash
@@ -124,7 +124,7 @@ node createServer.js 127.0.0.1 3001 1000   # Creates a backend server on port 30
 
 ---
 
-### **3. Start the Load Balancer**
+## **3. Start the Load Balancer**
 
 Once the backend servers are created, start the load balancer:
 
@@ -136,7 +136,7 @@ This will start the load balancer on port `8000`.
 
 ---
 
-### **4. Choose Load Balancing Algorithm**
+## **4. Choose Load Balancing Algorithm**
 
 When prompted, choose one of the following algorithms:
 
@@ -145,9 +145,9 @@ When prompted, choose one of the following algorithms:
 
 ---
 
-### **5. Send Test Requests**
+## **5. Send Test Requests**
 
-### **Curl Commands for Testing**
+## **Curl Commands for Testing**
 
 5.1. **Send a single test request to the load balancer:**
    ```bash
@@ -167,13 +167,13 @@ When prompted, choose one of the following algorithms:
    ```
 
 
-### **Health Check**
+## **Health Check**
 
 - The load balancer periodically checks the health of backend servers via their `/health` endpoint.
 - Servers that return a `200 OK` response are considered healthy, and the load balancer will forward traffic to them.
 - Servers that return an error (e.g., `503`) are marked as unhealthy and excluded from the list of available servers.
 
-### **Health Check Command**
+## **Health Check Command**
 
 1. **Checking Server Health:**
    To manually check if a backend server is healthy, use the following `curl` command:

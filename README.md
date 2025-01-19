@@ -16,7 +16,7 @@ This project is designed to provide flexible load balancing for backend servers 
    - Automated Testing: Using the `test_load_balancer.sh` script to send multiple requests to the load balancer.
    - Manual Testing: Using `curl` to send individual requests to the load balancer and view load distribution.
      
-# This project is designed to provide flexible load balancing for backend servers with an easy-to-use CLI and real-time monitoring.
+#### This project is designed to provide flexible load balancing for backend servers with an easy-to-use CLI and real-time monitoring.
 ---
 
 # **Project Structure**

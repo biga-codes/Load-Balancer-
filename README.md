@@ -172,7 +172,7 @@ When prompted, choose one of the following algorithms:
    ```
 
 
-## **Health Check**
+# **Health Check**
 
 - The load balancer periodically checks the health of backend servers via their `/health` endpoint.
 - Servers that return a `200 OK` response are considered healthy, and the load balancer will forward traffic to them.

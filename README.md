@@ -7,13 +7,13 @@ This project is designed to provide flexible load balancing for backend servers 
 
 ### **Features of the Load Balancer Project**
 
-- **Load Balancer:** Distributes requests using Round Robin or Least Connections.
-- **Server Discovery & Health Check:** Monitors and filters out unhealthy servers.
-- **Configurable Backend Servers:** Create servers dynamically with ports and optional delays.
-- **Testing with `curl` or `test_load_balancer.sh` script:** Send multiple requests to test the distribution.
-- **Multiple Methods for Request Testing:**
-   - **Automated Testing:** Using the `test_load_balancer.sh` script to send multiple requests to the load balancer.
-   - **Manual Testing:** Using `curl` to send individual requests to the load balancer and view load distribution.
+- Load Balancer: Distributes requests using Round Robin or Least Connections.
+- Server Discovery & Health Check: Monitors and filters out unhealthy servers.
+- Configurable Backend Servers: Create servers dynamically with ports and optional delays.
+- Testing with `curl` or `test_load_balancer.sh` script:** Send multiple requests to test the distribution.
+- Multiple Methods for Request Testing:
+   - Automated Testing: Using the `test_load_balancer.sh` script to send multiple requests to the load balancer.
+   - Manual Testing: Using `curl` to send individual requests to the load balancer and view load distribution.
      
 ### This project is designed to provide flexible load balancing for backend servers with an easy-to-use CLI and real-time monitoring.
 ---
@@ -47,9 +47,9 @@ This project is designed to provide flexible load balancing for backend servers 
 - **Least Connections**: Routes requests to the server with the least number of active connections.
 
 ---
-### File Descriptions:
+## File Descriptions:
 
--server.js: Main entry point for the load balancer. It starts an HTTP server, accepts incoming requests, and uses a selected load balancing algorithm (round-robin or least 
+- server.js: Main entry point for the load balancer. It starts an HTTP server, accepts incoming requests, and uses a selected load balancing algorithm (round-robin or least 
            connections) to route requests to healthy backend servers.
 -roundRobin.js: Implements the Round-Robin algorithm. It forwards requests to servers in a circular manner. Each server gets an equal number of requests.
 -leastConnections.js: Implements the Least Connections algorithm. It forwards requests to the server with the fewest active connections to balance the load better.
